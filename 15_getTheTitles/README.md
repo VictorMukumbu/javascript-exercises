@@ -21,6 +21,11 @@ Your job is to write a function that takes the array and returns an array of tit
 getTheTitles(books) // ['Book','Book2']
 ```
 
+
 ## Hints
 
 - You should use a built-in javascript method to do most of the work for you!
+
+const titles =(books)=>{
+  return books.map((book)=>book.title)
+}
