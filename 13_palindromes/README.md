@@ -16,4 +16,8 @@ palindromes('racecar') // true
 palindromes('tacos') // false
 ```
 
-
+const checkPalindrome =(str)=>{
+  let cleaned = str.toLowerCase().replace(/[^a-z0-9]/g,"")
+  let reversed = cleaned.split("").reverse().join("")
+  return cleaned===reversed
+}
